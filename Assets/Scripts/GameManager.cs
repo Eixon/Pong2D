@@ -3,8 +3,11 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
-	public GUIText player1ScoreLabel, player2ScoreLabel, WinnerLabel;
+	public GUIText player1ScoreLabel, player2ScoreLabel;
 	public static int player1Score, player2Score;
+	public static string winner;
+
+	
 
 	public static void WallHit(bool leftWall) {
 		if(leftWall) {
@@ -12,10 +15,13 @@ public class GameManager : MonoBehaviour {
 		} else {
 			player1Score++;
 		}
-	}
 
-	public static void Winner(string winner) {
-		WinnerLabel.text = "<b>Vainqueur :</b> " + winner;
+		if (player1Score == 5) {
+				winner = "Joueur 1";
+		}
+		if (player2Score == 5) {
+				winner = "Joueur 2";
+		}
 	}
 
 	void OnGUI() {

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -40,9 +41,10 @@ public class BallControl : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider) {
 		if(collider.tag == "SideWall") {
 			if (GameManager.player1Score == 5 || GameManager.player2Score == 5) {
-				GameManager.player1Score == 5 ? GameManager.Winner ("Joueur 1") : GameManager.Winner ("Joueur 2");
+				SceneManager.LoadScene ("EndScene", LoadSceneMode.Single);
 			}
+			
 			else Reset();
-			}
+		}
 	}
 }
