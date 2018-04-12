@@ -31,10 +31,16 @@ public class BallControl : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision) {
-		if(collision.collider.tag == "Player") {
+		if(collision.collider.tag == "Player2") {
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-			Vector3 randomDirection = new Vector3(Random.Range(-50, 50), Random.Range(-5, -5), 0);
+			Vector3 randomDirection = new Vector3(Random.Range(0, 49), Random.Range(-5, 5), 0);
 			GetComponent<Rigidbody2D>().AddForce(randomDirection.normalized * speed, ForceMode2D.Force);
+		}
+
+		if(collision.collider.tag == "Player1") {
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				Vector3 randomDirection = new Vector3(Random.Range(-49, 0), Random.Range(-5, 5), 0);
+				GetComponent<Rigidbody2D>().AddForce(randomDirection.normalized * speed, ForceMode2D.Force);
 		}
 	}
 	
