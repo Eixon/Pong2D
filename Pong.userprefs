@@ -1,15 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ChangeScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BallControl.cs">
     <Files>
-      <File FileName="Assets\SideWallCollisions.cs" Line="10" Column="20" />
-      <File FileName="Assets\Scripts\GameSetup.cs" Line="6" Column="38" />
-      <File FileName="Assets\Scripts\BallControl.cs" Line="44" Column="63" />
-      <File FileName="Assets\Scripts\PlayerControls.cs" Line="5" Column="26" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="10" Column="2" />
-      <File FileName="Assets\Scripts\ChangeScene.cs" Line="10" Column="34" />
-      <File FileName="Assets\Scripts\Winner.cs" Line="12" Column="51" />
-      <File FileName="Assets\Scripts\QuitGame.cs" Line="12" Column="1" />
+      <File FileName="Assets\SideWallCollisions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameSetup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BallControl.cs" Line="45" Column="3" />
+      <File FileName="Assets\Scripts\PlayerControls.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Winner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\QuitGame.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
